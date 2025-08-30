@@ -1,0 +1,22 @@
+{
+  "name": "cypress-stripe-elements",
+  "version": "1.0.0",
+  "description": "Cypress Plugin for filling Stripe Elements inside an iframe.",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "cypress": "^15.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "stripe",
+    "plugin",
+    "elements"
+  ],
+  "author": "leojuriolli7",
+  "license": "MIT"
+}

@@ -32,6 +32,14 @@ const getSelectorForField = (name: string) => `input[name="${name}"]`;
 Cypress.Commands.add(
   "fillStripeElement",
   (field: StripeElementName, value: string): void => {
+    if (Cypress.config("chromeWebSecurity")) {
+      throw new Error(
+        'You must set `{ "chromeWebSecurity": false }` in `cypress.json`, ' +
+          "or cypress-stripe-elements cannot access the Stripe Elements " +
+          "<iframe> to perform autofill."
+      );
+    }
+
     const selector = getSelectorForField(field);
 
     cy.get("iframe")

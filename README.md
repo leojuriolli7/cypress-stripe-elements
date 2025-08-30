@@ -2,6 +2,9 @@
 
 A Cypress plugin that provides a command to easily fill Stripe Elements inputs within iframes. Without `cy.wait()` hacks or else.
 
+<img width="2568" height="1228" alt="cypress-stripe-elements" src="https://github.com/user-attachments/assets/198f1d89-a0f6-406b-92d4-dbf31752f981" />
+
+
 ## Installation
 
 ```bash
@@ -77,7 +80,7 @@ cy.getBySelector("PaymentForm-PaymentElement").within(() => {
   cy.fillStripeElement("cvc", "424");
 });
 
-cy.getBySelector("payment-submit-button").click();
+cy.getBySelector("PaymentForm-SubmitButton").click();
 ```
 
 ### Complete Example

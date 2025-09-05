@@ -1,6 +1,10 @@
 {
   "name": "cypress-stripe-elements",
   "version": "1.0.2",
+  "repository": {
+    "url": "https://github.com/leojuriolli7/cypress-stripe-elements"
+  },
+  "homepage": "https://github.com/leojuriolli7/cypress-stripe-elements",
   "description": "Cypress Plugin for filling Stripe Elements inside an iframe.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
